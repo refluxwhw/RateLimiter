@@ -5,10 +5,9 @@ namespace Util {
     class Time
     {
     public:
-        static void msDelay(long long ms);
-        static void usDelay(long long us);
+        static long long msDelay(long long ms);
+        static long long usDelay(long long us);
         static long long getCurrentUs();
-        static long long getCurrentMs();
     };
 }
 

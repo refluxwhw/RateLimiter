@@ -4,12 +4,11 @@
 #
 #-------------------------------------------------
 
-QT -= core gui
+QT       += core gui
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = RateLimiter
-TEMPLATE = lib
+TEMPLATE = app
 
-DEFINES += RATELIMITER_LIBRARY
-
+include (test/test.pri)
 include (src/ratelimiter.pri)
-
